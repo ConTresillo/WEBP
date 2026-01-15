@@ -3,7 +3,7 @@
 > `HTML Input Types` define **how user data is captured, validated, serialized, and exposed** to the browser, assistive technologies, and the form submission pipeline.
 
 ---
-
+![[Pasted image 20260115163458.png]]
 ---
 
 ## 1️⃣ `<input type="text">` — Single-Line Text
