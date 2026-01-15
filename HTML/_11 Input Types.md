@@ -34,7 +34,7 @@
 ```html
 <input type="text" name="username">
 ```
-
+<input type="text" name="username" placeholder="hello">
 ---
 
 ### **Observed output**

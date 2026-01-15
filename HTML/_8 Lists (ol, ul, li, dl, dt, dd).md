@@ -303,7 +303,10 @@ Invalid HTML (browser may auto-correct unpredictably)
   <dd>Markup language</dd>
 </dl>
 ```
-
+<dl>
+  <dt>HTML</dt>
+  <dd>Markup language</dd>
+</dl>
 ---
 
 ### **Observed output**
@@ -331,7 +334,9 @@ HTML
   <dd>Orphan value</dd>
 </dl>
 ```
-
+<dl>
+  <dd>Orphan value</dd>
+</dl>
 **Failure:**  
 Undefined association (missing term)
 

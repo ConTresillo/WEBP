@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Semantic Knowledge Portal</title>
+	</head>
+	
+	<body>
+		<!-- id="top" must be on a visible element (NOT <title>) -->
+		<h1 id="top">Semantic Knowledge Portal</h1>
+
+		<p>
+			A structured demonstration of 
+			<b>semantic HTML</b>, 
+			<i>accessibility</i>, 
+			and <mark>clean document structure.</mark>
+		</p>
+		
+		<!-- Correct list → li owns a, not the other way around -->
+		<ul>
+			<li><a href="#intro">Introduction</a></li>
+			<li><a href="#forma">Text Formatting</a></li>
+			<li><a href="#lists">Lists</a></li>
+			<li><a href="#table">Table</a></li>
+			<li><a href="#images">Images</a></li>
+		</ul>
+		
+		<!-- Anchor targets must exactly match href values -->
+		<h2 id="intro">Introduction</h2>
+			<h3>What This Page Demonstrates</h3>
+			<p>
+				This page exists to demonstrate 
+				<b>HTML structure</b> without CSS.
+				It is written so that future styling can be added 
+				<u>without changing the markup</u>.
+			</p>
+
+			<p>
+				HTML is <b>not</b> about appearance.
+				It is about <i>meaning</i>, 
+				<code>hierarchy</code>, 
+				and <s>visual hacks</s>.
+			</p>
+
+			<p>
+				Mathematical example:
+				H<sub>2</sub>O, x<sup>2</sup>
+			</p>
+
+			<p>
+				This is an <b>aside</b>.
+				It contains related but non-essential information.
+			</p>
+
+		<hr>
+
+		<h2 id="forma">Text Formatting Elements</h2>
+			<p contenteditable="true">
+				This paragraph is <i>contenteditable</i>.
+				You can edit it directly in the browser.
+			</p>
+
+		<hr>
+
+		<h2 id="lists">Lists</h2>
+			<h3>Unordered List</h3>
+			<ul>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>
+					JavaScript
+					<ul>
+						<li>DOM</li>
+						<li>Events</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3>Ordered List</h3>
+			<ol>
+				<li>Understand structure</li>
+				<li>Apply semantics</li>
+				<li>Style later</li>
+			</ol>
+
+			<h3>Description List</h3>
+			<dl>
+				<dt>HTML</dt>
+				<dd>Structure of the web</dd>
+				<dt>CSS</dt>
+				<dd>Presentation layer</dd>
+			</dl>
+
+		<hr>
+
+		<h2 id="table">Table</h2>
+		<table>
+			<!-- Only ONE caption is allowed, and it must be first -->
+			<caption>Technology Comparison</caption>
+
+			<thead>
+				<tr>
+					<th scope="col">Technology</th>
+					<th scope="col">Purpose</th>
+					<th scope="col">Layer</th>
+				</tr>
+			</thead>
+				
+			<tbody>
+				<tr>
+					<th scope="row">HTML</th>
+					<td>Structure</td>
+					<td>Markup</td>
+				</tr>
+				<tr>
+					<th scope="row">CSS</th>
+					<td>Styling</td>
+					<td>Presentation</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- Footer text moved OUT of table (caption was invalid before) -->
+		<p>Data shown for educational purposes</p>
+
+		<hr>
+			
+		<h2 id="images">Images</h2>
+		<img 
+			src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+			alt="HTML Logo"
+			loading="lazy"
+		>
+		<p>HTML5 official logo</p>
+
+		<!-- footer MUST be inside body -->
+		<footer>
+			<p>
+				© 2026 Semantic Portal |
+				<a href="#top">Back to top</a>
+			</p>
+			<p>
+				Document metadata stored using <code>data-*</code> attributes.
+			</p>
+		</footer>
+
+	</body>
+</html>
