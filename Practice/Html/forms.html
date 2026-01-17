@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>User Registration Form</title>
+</head>
+
+<body>
+
+	<h1>User Registration & Feedback</h1>
+
+	<form action="submit.html" method="post">
+
+		<!-- TEXT INPUT -->
+		<p>
+			<label for="username">Username:</label><br>
+			<input
+				type="text"
+				id="username"
+				name="username"
+				required
+				placeholder="Enter username"
+			>
+		</p>
+
+		<!-- EMAIL -->
+		<p>
+			<label for="email">Email:</label><br>
+			<input
+				type="email"
+				id="email"
+				name="email"
+				required
+			>
+		</p>
+
+		<!-- PASSWORD -->
+		<p>
+			<label for="password">Password:</label><br>
+			<input
+				type="password"
+				id="password"
+				name="password"
+				required
+				minlength="6"
+			>
+		</p>
+
+		<!-- NUMBER -->
+		<p>
+			<label for="age">Age:</label><br>
+			<input
+				type="number"
+				id="age"
+				name="age"
+				min="18"
+				max="60"
+			>
+		</p>
+
+		<!-- DATE & TIME -->
+		<p>
+			<label for="dob">Date of Birth:</label><br>
+			<input type="date" id="dob" name="dob">
+		</p>
+
+		<p>
+			<label for="time">Preferred Contact Time:</label><br>
+			<input type="time" id="time" name="time">
+		</p>
+
+		<!-- RADIO GROUP -->
+		<p>
+			Gender:<br>
+			<label>
+				<input type="radio" name="gender" value="male" required>
+				Male
+			</label>
+			<label>
+				<input type="radio" name="gender" value="female">
+				Female
+			</label>
+		</p>
+
+		<!-- CHECKBOX -->
+		<p>
+			<label>
+				<input type="checkbox" name="terms" required>
+				I agree to the terms
+			</label>
+		</p>
+
+		<!-- SELECT -->
+		<p>
+			<label for="course">Course:</label><br>
+			<select id="course" name="course">
+				<optgroup label="Web">
+					<option>HTML</option>
+					<option>CSS</option>
+				</optgroup>
+				<optgroup label="Programming">
+					<option>Python</option>
+					<option>Java</option>
+				</optgroup>
+			</select>
+		</p>
+
+		<!-- TEXTAREA -->
+		<p>
+			<label for="feedback">Feedback:</label><br>
+			<textarea
+				id="feedback"
+				name="feedback"
+				rows="4"
+				cols="30"
+				placeholder="Your feedback here"
+			></textarea>
+		</p>
+
+		<!-- FILE -->
+		<p>
+			<label for="resume">Upload Resume:</label><br>
+			<input type="file" id="resume" name="resume">
+		</p>
+
+		<!-- RANGE -->
+		<p>
+			<label for="rating">Rating:</label><br>
+			<input type="range" id="rating" name="rating" min="1" max="10">
+		</p>
+
+		<!-- COLOR -->
+		<p>
+			<label for="color">Favorite Color:</label><br>
+			<input type="color" id="color" name="color">
+		</p>
+
+		<!-- BUTTONS -->
+		<p>
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+		</p>
+
+	</form>
+
+</body>
+</html>
